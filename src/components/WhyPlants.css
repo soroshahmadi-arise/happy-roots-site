@@ -1,0 +1,46 @@
+.why {
+  text-align: left;
+}
+
+.why .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.why__left {
+  position: sticky;
+  top: 120px;
+}
+
+.why h2 {
+  margin-top: var(--space-sm);
+  max-width: 14ch;
+}
+
+.why .divider {
+  margin: var(--space-md) 0;
+}
+
+.why__text {
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
+  line-height: 1.85;
+  max-width: 52ch;
+  padding-top: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .why .container {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .why__left {
+    position: static;
+  }
+
+  .why__text {
+    padding-top: 0;
+  }
+}
