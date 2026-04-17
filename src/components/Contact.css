@@ -7,7 +7,6 @@
 
 .contact__text h2 {
   margin-top: var(--space-sm);
-  max-width: 16ch;
 }
 
 .contact__text p {
