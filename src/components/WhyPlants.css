@@ -40,6 +40,10 @@
     position: static;
   }
 
+  .why h2 {
+    max-width: none;
+  }
+
   .why__text {
     padding-top: 0;
   }
