@@ -221,7 +221,7 @@
   transform: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .contact__layout {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
