@@ -2,25 +2,22 @@ import './Testimonials.css'
 
 const testimonials = [
   {
-    name: 'Emily R.',
-    role: 'Office Manager',
+    name: 'Emily R',
     quote:
-      'Happy Roots completely transformed our office. The plants are beautiful and the weekly maintenance means we never have to think about it. Our team loves the space now.',
+      'The plants arrived in perfect condition and instantly lifted the whole space. You can tell they really care about quality.',
     initials: 'ER',
   },
   {
-    name: 'Jason M.',
-    role: 'Yoga Studio Owner',
+    name: 'Jason',
     quote:
-      'The energy in our studio changed the moment the plants went in. Our clients comment on how calming the space feels. Suni really understood what we needed.',
-    initials: 'JM',
+      'I was worried about leaving my plants while traveling, but everything was healthier than before when I came back. Highly reliable.',
+    initials: 'J',
   },
   {
-    name: 'Sarah L.',
-    role: 'Homeowner',
+    name: 'Sarah',
     quote:
-      'I always killed my plants before. Happy Roots helped me pick the right ones and showed me exactly how to care for them. Six months in and everything is still thriving.',
-    initials: 'SL',
+      'Their plant care service is a game changer. I don\'t stress about my plants anymore when I travel.',
+    initials: 'S',
   },
 ]
 
@@ -39,14 +36,13 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div key={t.name} className={`testimonials__shell reveal reveal-delay-${i + 1}`}>
               <blockquote className="testimonials__card">
-                <p className="testimonials__quote">&ldquo;{t.quote}&rdquo;</p>
-                <footer className="testimonials__author">
-                  <div className="testimonials__avatar">{t.initials}</div>
-                  <div>
-                    <cite className="testimonials__name">{t.name}</cite>
-                    <span className="testimonials__role">{t.role}</span>
-                  </div>
-                </footer>
+                <cite className="testimonials__name">{t.name}</cite>
+                <div className="testimonials__stars" aria-label="5 out of 5 stars">
+                  {'★★★★★'.split('').map((s, j) => (
+                    <span key={j} className="testimonials__star">{s}</span>
+                  ))}
+                </div>
+                <p className="testimonials__quote">{t.quote}</p>
               </blockquote>
             </div>
           ))}
