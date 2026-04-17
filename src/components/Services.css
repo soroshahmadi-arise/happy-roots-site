@@ -12,7 +12,6 @@
 
 .services__left h2 {
   margin-top: var(--space-sm);
-  max-width: 16ch;
 }
 
 .services__image {
