@@ -47,7 +47,7 @@ export default function Audiences() {
       <div className="container">
         <span className="label reveal">Who we help</span>
         <h2 className="reveal reveal-delay-1">
-          Plant care for the spaces people<br />live, work, and recharge in
+          Plant care for the spaces people live, work, and recharge in
         </h2>
         <div className="audiences__grid">
           {audiences.map((item, i) => (

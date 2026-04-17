@@ -78,7 +78,7 @@
 @media (max-width: 768px) {
   .services__layout {
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    gap: var(--space-lg);
   }
 
   .services__left {
@@ -86,6 +86,11 @@
   }
 
   .services__image {
-    display: none;
+    margin-top: var(--space-md);
+    aspect-ratio: 16 / 9;
+  }
+
+  .services__item {
+    padding: var(--space-md) 0;
   }
 }
